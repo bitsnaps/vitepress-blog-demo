@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Projects
       link: /projects
+    - theme: alt
+      text: Training
+      link: /training
 
 features:
   - title: Consulting

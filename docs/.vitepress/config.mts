@@ -32,6 +32,7 @@ export default defineConfig({
       { text: 'Projects', link: '/projects', activeMatch: '/projects/' },
       { text: 'Training', link: '/training', activeMatch: '/training/' },
       { text: 'Events', link: '/events', activeMatch: '/events/' },
+      { text: 'Teams', link: '/teams' },
       { text: 'Contact', link: '/contact' },
       // Custom component must be globally registerd via `Theme.enhanceApp()`
       // {
@@ -76,6 +77,26 @@ export default defineConfig({
     returnToTopLabel: 'Goto top',
     langMenuLabel: 'Languages',
     externalLinkIcon: true,
+    search: { //https://vitepress.dev/reference/default-theme-search
+      provider: 'local',
+      options: {
+        // locales: { "fr":{"placeholder":...}
+        translations: {
+          button: {
+            buttonText: 'Quick Search...'
+          },
+          modal: {
+            noResultsText: 'No results for: ',
+            footer: {
+              closeText: 'Close',
+              selectText: 'Select',
+              navigateText: 'Navigate'
+            }
+          }
+        }
+        //} //locales
+      }
+    },
     docFooter: {
       prev: '&lt; - Previous',
       next: 'Next - &gt;'
