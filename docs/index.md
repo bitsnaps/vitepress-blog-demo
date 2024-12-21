@@ -33,7 +33,7 @@ features:
 <script setup>
 import { useData } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
-import { data } from './posts.data.ts'
+import { data } from './info.data.ts'
 
 const { hasSidebar } = useSidebar()
 const { page } = useData()

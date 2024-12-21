@@ -8,6 +8,7 @@ import NewLayout from './layouts/NewLayout.vue'
 import CSButton from './components/CSButton.vue'
 import './style.css'
 import CSContact from './components/CSContact.vue'
+import CSPosts from './components/CSPosts.vue'
 
 export default {
   extends: DefaultTheme,
@@ -24,6 +25,7 @@ export default {
     app.component('clean', Clean)
     app.component('CSButton', CSButton)
     app.component('CSContact', CSContact)
+    app.component('CSPosts', CSPosts)
   }
   
 } satisfies Theme

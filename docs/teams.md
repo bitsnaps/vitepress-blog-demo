@@ -60,6 +60,7 @@ const consultants = [
 <!-- Advanced -->
 <VPTeamPage>
 
+  <!-- Page Title -->
   <VPTeamPageTitle>
     <template #title>
       Our Team
@@ -69,12 +70,13 @@ const consultants = [
     </template>
   </VPTeamPageTitle>
   
+  <!-- Core Members -->
   <VPTeamMembers
     size="small"
     :members="members"
   />
 
- <!-- You can add sections -->
+ <!-- Sections -->
   <VPTeamPageSection>
     <template #title>Consultant</template>
     <template #lead>Some of our consultants...</template>
@@ -82,4 +84,5 @@ const consultants = [
       <VPTeamMembers size="small" :members="consultants" />
     </template>
   </VPTeamPageSection>
+
 </VPTeamPage>
