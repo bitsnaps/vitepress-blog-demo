@@ -32,6 +32,7 @@ export default defineConfig({
       { text: 'Projects', link: '/projects', activeMatch: '/projects/' },
       { text: 'Training', link: '/training', activeMatch: '/training/' },
       { text: 'Events', link: '/events', activeMatch: '/events/' },
+      { text: 'Solutions', link: '/solutions', activeMatch: '/solutions/' },
       { text: 'Teams', link: '/teams' },
       { text: 'Contact', link: '/contact' },
       // Custom component must be globally registerd via `Theme.enhanceApp()`
