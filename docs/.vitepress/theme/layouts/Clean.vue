@@ -13,6 +13,11 @@ const $router = useRouter()
   <div class="container">
     <div class="page">
       <h1>{{ page.title }}</h1>
+
+      <div v-if="page.isNotFound">
+        <h1>Oups! The page requested was not found!</h1>
+      </div>
+      <Content v-else />      
     </div>
     
     <VPButton class="button" text="Home" @click="$router.go('/')" />

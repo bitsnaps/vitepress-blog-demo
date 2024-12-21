@@ -6,6 +6,7 @@ import DefaultTheme from 'vitepress/theme'
 import Clean from './layouts/Clean.vue'
 import CSButton from './components/CSButton.vue'
 import './style.css'
+import CSContact from './components/CSContact.vue'
 
 export default {
   extends: DefaultTheme,
@@ -20,6 +21,7 @@ export default {
     // A layout registered as a component
     app.component('clean', Clean)
     app.component('CSButton', CSButton)
+    app.component('CSContact', CSContact)
   }
   
 } satisfies Theme

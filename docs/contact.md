@@ -10,10 +10,6 @@ For any kind of inqueries, just fill in the form and tell us what you want, don'
 ---
 
 
-<form method="post" action="/api/contact">
-    <label for="email">Your email:</label>
-    <br>
-    <input name="email" placeholder="admin@example.com" />
-</form>
+<CSContact formEndpoint="https://corposense.com/form" />
 
 _No spam, we promise!_

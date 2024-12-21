@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
 import { VPButton } from 'vitepress/theme'
-import DGModal from './DGModal.vue'
-
-//https://www.digilol.net/blog/contact-form-in-vuejs.html
+import CSModal from './CSModal.vue'
 
 const props = defineProps<{
   formEndpoint: string
@@ -55,11 +53,11 @@ export default {
         <h2 class="contact-title">Contact us</h2>
         <div class="contact-wrapper">
           <div class="contact-form">
-            <DGModal :show="modalOpen" @close="modalOpen = false" :altEmail="altEmail">
+            <CSModal :show="modalOpen" @close="modalOpen = false" :altEmail="altEmail">
               <template #header>
                 <h3>{{ result }}</h3>
               </template>
-            </DGModal>
+            </CSModal>
   
             <form @submit.prevent="submit">
               <p>Leave us a message and we'll respond within 48 hours.</p>
@@ -88,4 +86,7 @@ export default {
               </div>
             </form>
           </div>
-  
+      </div>
+    </div>
+  </div>
+</template>
