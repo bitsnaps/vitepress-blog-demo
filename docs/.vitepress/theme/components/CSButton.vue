@@ -16,8 +16,8 @@ defineProps<{
   padding: 0 25px !important;
   margin: 5px 0;
   font-weight: 800;
-  font-size: large !important;
-  color: black !important;
-  background-color: red !important;
+  font-size: var(--vp-code-font-size)*2 !important;
+  color: var(--cp-c-white) !important;
+  background-color: var(--vp-c-red-3) !important;
 }
 </style>

@@ -33,15 +33,17 @@ features:
 <script setup>
 import { useData } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
+import { data } from './posts.data.ts'
 
 const { hasSidebar } = useSidebar()
 const { page } = useData()
 </script>
 
 <!-- <h1 v-if="hasSidebar">{{ page.title }}</h1> -->
-
-<CSButton text="Home" />
+<CSButton text="Read more..." />
 :tada: :100: New Training session has been created!
+
+We are on: {{ data.now }}
 
 ::: info
 This is an info box.
