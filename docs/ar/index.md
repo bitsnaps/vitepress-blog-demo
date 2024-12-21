@@ -11,24 +11,24 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: Contact
+      text: اتصل بنا
       link: /contact
     - theme: alt
-      text: Projects
+      text: المشاريع
       link: /projects
     - theme: alt
-      text: Training
+      text: دورات تدريبية
       link: /training
 
 features:
-  - title: Consulting
-    details: Consulting on IT and Managemgent System
-  - title: Integration
-    details: Integrating Business Solutions to improve the effeciency of your performance
+  - title: استشارة
+    details: خدمات استشارية في نظم المعلومات
+  - title: حلول
+    details: إدراج حلول رقمية من أجل تحسين الآداء
     link: /projects
   - icon: 🛠️
-    title: Support
-    details: Support your business operations to avoid any mis-alignment with the pre-defined goals.
+    title: الدعم الفني
+    details: تقديم الدعم الفني من أجل سير أحسن للخدمات التجارية والعمليات التسييرية
 ---
 <script setup>
 import { useData } from 'vitepress'
@@ -41,30 +41,30 @@ const { page } = useData()
 
 <!-- <h1 v-if="hasSidebar">{{ page.title }}</h1> -->
 <CSButton text="Read more..." />
-:tada: :100: New Training session has been created!
+:tada: :100: دورة تدريبية جديدة
 
-We are on: {{ data.now }}
+نحن اليوم: {{ data.now }}
 
 ::: info
-This is an info box.
+بيانات مفيدة
 :::
 
 ::: tip
-This is a tip.
+نصائح للاستخدام
 :::
 
 ::: warning
-This is a warning.
+تنبيه هام
 :::
 
 ::: danger Alert
-This is a dangerous warning.
+خطر استخدام
 :::
 
-::: details Contact
-- Contact informations:
-- Address: 
-- Tel:
+::: details للتواصل
+- معلومات:
+- العنوان: 
+- هاتف:
 :::
 
 ## Badges

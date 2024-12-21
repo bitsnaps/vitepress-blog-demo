@@ -4,7 +4,7 @@ layout: home # other default layouts: doc, page
 title: Home
 hero:
   name: CorpoSense
-  text: "Enterprise Solutions"
+  text: "Solutions Enterprise"
   tagline: Solution / Service / Support
   image:
     src: /assets/logo_dark.png
@@ -14,21 +14,21 @@ hero:
       text: Contact
       link: /contact
     - theme: alt
-      text: Projects
+      text: Projets
       link: /projects
     - theme: alt
-      text: Training
+      text: Formations
       link: /training
 
 features:
   - title: Consulting
-    details: Consulting on IT and Managemgent System
-  - title: Integration
-    details: Integrating Business Solutions to improve the effeciency of your performance
+    details: Consulting en IT Managemgent
+  - title: Intégration
+    details: Intégrer des solutions d'entreprise pour améliorer l'efficacité de vos performances
     link: /projects
   - icon: 🛠️
     title: Support
-    details: Support your business operations to avoid any mis-alignment with the pre-defined goals.
+    details: Soutenez vos opérations commerciales pour éviter tout décalage avec les objectifs prédéfinis.
 ---
 <script setup>
 import { useData } from 'vitepress'
@@ -41,29 +41,29 @@ const { page } = useData()
 
 <!-- <h1 v-if="hasSidebar">{{ page.title }}</h1> -->
 <CSButton text="Read more..." />
-:tada: :100: New Training session has been created!
+:tada: :100: Un nouveau bootcamp a été crée!
 
-We are on: {{ data.now }}
+Nous somme: {{ data.now }}
 
 ::: info
-This is an info box.
+Ceci est une boîte d'information.
 :::
 
 ::: tip
-This is a tip.
+Ceci est un conseil.
 :::
 
 ::: warning
-This is a warning.
+Ceci est un avertissement.
 :::
 
 ::: danger Alert
-This is a dangerous warning.
+C'est un avertissement dangereux.
 :::
 
 ::: details Contact
-- Contact informations:
-- Address: 
+- Informations de contact:
+- Adresse: 
 - Tel:
 :::
 

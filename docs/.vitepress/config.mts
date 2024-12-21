@@ -17,6 +17,50 @@ export default defineConfig({
   cleanUrls: true, // May not be supported by all hosting providers
   title: "CorpoSense",
   description: "CorpoSense - Enterprise Solutions",
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    ar: {
+      label: 'العربية',
+      lang: 'ar', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/ar', // default /fr/ -- shows on navbar translations menu, can be external
+      // other locale specific properties...
+      themeConfig: {
+        nav: [
+          { text: 'الرئيسية', link: '/' },
+          { text: 'المشاريع', link: '/projects', activeMatch: '/projects/' },
+          { text: 'التكوين', link: '/training', activeMatch: '/training/' },
+          { text: 'أحداث', link: '/events', activeMatch: '/events/' },
+          { text: "الفريق", link: '/teams' },
+        ],
+        docFooter: {
+          prev: '&lt; - السابق',
+          next: 'التالي - &gt;'
+        },
+      }
+    },
+    fr: {
+      label: 'French',
+      lang: 'fr', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/fr', // default /fr/ -- shows on navbar translations menu, can be external
+      // other locale specific properties...
+      themeConfig: {
+        nav: [
+          { text: 'Accueil', link: '/' },
+          { text: 'Projets', link: '/projects', activeMatch: '/projects/' },
+          { text: 'Formations', link: '/training', activeMatch: '/training/' },
+          { text: 'Evénement', link: '/events', activeMatch: '/events/' },
+          { text: "L'équipe", link: '/teams' },
+        ],
+        docFooter: {
+          prev: '&lt; - Précédent',
+          next: 'Suivant - &gt;'
+        },
+      }
+    }    
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // i18nRouting: false, // Default: true
