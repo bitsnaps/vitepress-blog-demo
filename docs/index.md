@@ -7,7 +7,7 @@ hero:
   text: "Enterprise Solutions"
   tagline: Solution / Service / Support
   image:
-    src: /assets/logo_dark.png
+    src: /assets/network.svg
     alt: logo
   actions:
     - theme: brand
@@ -38,6 +38,7 @@ import { data } from '/info.data.ts'
 const { hasSidebar } = useSidebar()
 const { page } = useData()
 </script>
+
 
 <!-- <h1 v-if="hasSidebar">{{ page.title }}</h1> -->
 <CSButton text="Read more..." />
