@@ -3,7 +3,6 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData, inBrowser } from 'vitepress'
 import { watchEffect } from 'vue'
-import DGContact from './components/DGContact.vue'
 
 const { lang } = useData()
 

@@ -4,8 +4,8 @@ layout: home # other default layouts: doc, page
 title: Home
 hero:
   name: CorpoSense
-  text: "Enterprise Solutions"
-  tagline: Solution / Service / Support
+  text: "حلول للشركات"
+  tagline: حلول / خدمات / دعم فني
   image:
     src: /assets/logo_dark.png
     alt: logo
