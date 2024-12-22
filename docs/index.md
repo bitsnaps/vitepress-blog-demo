@@ -7,7 +7,7 @@ hero:
   text: "Enterprise Solutions"
   tagline: Solution / Service / Support
   image:
-    src: /assets/network.svg
+    src: /network.svg
     alt: logo
   actions:
     - theme: brand

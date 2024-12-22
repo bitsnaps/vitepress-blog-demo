@@ -65,8 +65,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // i18nRouting: false, // Default: true
     logo: {
-      dark: '/assets/logo_dark.png',
-      light: '/assets/logo.png',
+      dark: '/logo_dark.png',
+      light: '/logo.png',
       alt: 'logo'
     },
     siteTitle: false,
@@ -108,9 +108,9 @@ export default defineConfig({
     socialLinks: [
       // Disabled while working offline
       { icon: { svg: linkedin }, link: 'https://www.linkedin.com/company/corposense' },
-      // { icon: 'facebook', link: 'https://www.facebook.com/SarlCorpoSense/' },
-      // { icon: 'twitter', link: 'https://twitter.com/dataFighters' },
-      // { icon: 'github', link: 'https://github.com/corposense' },
+      { icon: 'facebook', link: 'https://www.facebook.com/SarlCorpoSense/' },
+      { icon: 'twitter', link: 'https://twitter.com/dataFighters' },
+      { icon: 'github', link: 'https://github.com/corposense' },
     ],
     lastUpdated: {
       text: 'Updated at',

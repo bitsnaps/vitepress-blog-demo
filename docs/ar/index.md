@@ -7,7 +7,7 @@ hero:
   text: "حلول للشركات"
   tagline: حلول / خدمات / دعم فني
   image:
-    src: /assets/logo_dark.png
+    src: /network.svg
     alt: logo
   actions:
     - theme: brand
