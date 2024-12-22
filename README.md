@@ -1,6 +1,6 @@
-# Official website
+# VitePress Demo
 
-This is the official website source code.
+This is demo of using VitePress.
 
 **Note**:
 - It uses [VitePress](https://vitepress.dev/) to generate all pages.
