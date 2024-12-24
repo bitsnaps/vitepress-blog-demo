@@ -14,6 +14,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      mailto: 'hello@domain.tld',
       form: {
         name: '',
         email: '',
@@ -35,7 +36,7 @@ export default {
       })
       .catch(error => {
         this.modalOpen = true;
-        this.altEmail = `mailto:hello@domain.tld?subject=${this.form.service}&body=${this.form.message}`
+        this.altEmail = `mailto:${this.mailto}?subject=${this.form.service}&body=${this.form.message}`
         if (error.request.status == 429) {
                 this.result = "Slow down! You made too many requests, try again later."
         } else {
@@ -67,7 +68,7 @@ export default {
               </div>
               <div class="form-element top email-container">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="name@example.net" v-model="form.email" required />
+                <input type="email" name="email" id="email" placeholder="corposense@gmail.com" v-model="form.email" required />
               </div>
               <div class="form-element">
                 <label for="service-selector">I am interested in</label>
@@ -82,7 +83,7 @@ export default {
               </div>
               <div class="form-element">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" v-model="form.message" placeholder="Dear Digilol Team,&#10;Is smoking bad for my computer?" required></textarea>
+                <textarea id="message" name="message" v-model="form.message" placeholder="Hello,&#10;I have an issue with my ERP..." required></textarea>
               </div>
               <div class="form-element submit">
                 <VPButton text="Submit" />
